@@ -1,0 +1,47 @@
+{
+    "name": "nuxt-app",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "nuxt build",
+        "dev": "nuxt dev",
+        "generate": "nuxt generate",
+        "preview": "nuxt preview",
+        "postinstall": "nuxt prepare",
+        "build:check": "npm run format:check && npm run security:check",
+        "security:check": "npm audit --production --audit-level high",
+        "format": "prettier --write \"**/*.{js,vue,d.ts}\" --cache",
+        "format:check": "prettier --check \"**/*.{js,vue,d.ts}\"",
+        "lint": "eslint --ext \".js,.vue\" --ignore-path .gitignore . --cache",
+        "lint:fix": "eslint --fix --ext \".js,.vue\" --ignore-path .gitignore ."
+    },
+    "dependencies": {
+        "@pinia/nuxt": "^0.5.1",
+        "axios": "^1.6.8",
+        "eslint": "8.30.0",
+        "nuxt": "^3.11.0",
+        "pinia": "^2.1.7",
+        "postcss": "^8.4.36",
+        "primeicons": "^6.0.1",
+        "primevue": "^3.50.0",
+        "vue": "^3.4.21",
+        "vue-router": "^4.3.0"
+    },
+    "devDependencies": {
+        "@babel/eslint-parser": "^7.23.10",
+        "@nuxtjs/i18n": "^8.2.0",
+        "add": "^2.0.6",
+        "autoprefixer": "^10.4.18",
+        "eslint": "^8.30.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-nuxt": "^4.0.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-vue": "^9.4.0",
+        "nuxt-primevue": "^0.3.1",
+        "prettier": "^3.2.5",
+        "sass": "^1.72.0",
+        "sass-loader": "^14.1.1",
+        "tailwindcss": "^3.4.1",
+        "yarn": "^1.22.22"
+    }
+}
