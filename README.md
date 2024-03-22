@@ -13,6 +13,7 @@ Start the development server: yarn dev
 Your application will be available at http://localhost:3000 by default.
 
 Features:
+- primevue them config
 - login interceptor
 - prettier - eslint for coding convention
 - axios for handle api
