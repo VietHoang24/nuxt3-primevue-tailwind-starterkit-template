@@ -20,7 +20,7 @@
         </div>
         <div class="px-6 text-[12px] text-gray-600">Forgot password?</div>
         <div class="px-6 pb-2 mt-6">
-            <Button @click="login()"> Log in đi</Button>
+            <Button @click="login()"> Log in</Button>
         </div>
     </div>
 </template>
