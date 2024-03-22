@@ -25,7 +25,7 @@ on:
 env:
   AZURE_WEBAPP_NAME: your-app-name    # set this to your application's name
   AZURE_WEBAPP_PACKAGE_PATH: '.'      # set this to the path to your web app project, defaults to the repository root
-  NODE_VERSION: '14.x'                # set this to the node version to use
+  NODE_VERSION: '18.x'                # set this to the node version to use
 
 permissions:
   contents: read
@@ -40,12 +40,12 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ env.NODE_VERSION }}
-        cache: 'npm'
+        cache: 'yarn'
 
-    - name: npm install, build, and test
+    - name: yarn install, build
       run: |
-        npm install
-        npm run build
+        yarn install
+        yarn build
 
     - name: Upload artifact for deployment job
       uses: actions/upload-artifact@v3
